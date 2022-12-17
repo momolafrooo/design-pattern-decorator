@@ -10,5 +10,8 @@ public class Main {
 
         PizzaComponent pizzaQueenSauceTomate = new SauceTomate(new PizzaQueen());
         System.out.println(pizzaQueenSauceTomate.getName() + ": " + pizzaQueenSauceTomate.getPrice() + " XOF");
+
+        PizzaComponent pizzaQueenSauceTomateAndHot = new SauceHot(new SauceTomate(new PizzaQueen()));
+        System.out.println(pizzaQueenSauceTomateAndHot.getName() + ": " + pizzaQueenSauceTomateAndHot.getPrice() + " XOF");
     }
 }
